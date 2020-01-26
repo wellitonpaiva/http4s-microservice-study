@@ -18,7 +18,7 @@ object FinderRoutes {
       case GET -> Root =>
         Ok("Welcome")
       case GET -> Root / "data" =>
-        Ok(new CSVService().readFile("/NHSHC_CCG_AgeSex.csv"))
+        Ok(new CSVService().readFile("src/main/resources/NHSHC_CCG_AgeSex.csv"))
     }
   }
 }
